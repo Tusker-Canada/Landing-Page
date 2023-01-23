@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Alef";
+    src: url("/Fonts/Alef/Alef-Regular.ttf")
+  }
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: #2f3233;
+    display:flex;
+    overflow-y: hidden;
+}
+
+
+#one{
+    height: 100%;
+    width: 69.792%;
+    background-color: #344966;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#two{
+    height: 100%;
+    width: 1.875%;
+    background-color: #D6CBC1;
+}
+
+#three{
+    height: 100%;
+    width: 1.875%;
+    background-color: #344966;
+}
+
+#four{
+    height: 100%;
+    width: 1.875%;
+    background-color: #D6CBC1;
+}
+
+#five{
+    height: 100%;
+    width: 24.583%;
+    background-color: #344966;
+}
+
+.logo{
+    position: absolute;
+    top: 3.98%;
+    left: 4.01%;
+    height: 14%;
+
+}
+
+#landing-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+#landing-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#landing-body .yellow{
+    color: #FFC700;
+}
+
+#landing-body .line{
+
+    border:none;
+    width: 402px;
+    height: 6px;
+    background-color: #FFC700;
+
+}
+
+#landing-body h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#landing-body h1{
+    font-family: Alef;
+    font-size: 8rem;
+    color: #D6CBC1;
+}
+
+#landing-body h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30%;
+  
+}
+
+.sidebar h1{
+    transform: rotate(270deg);
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 8rem;
+    font-weight: lighter;
+   
+
+}
+
+.sidebar svg{
+    margin-top: 20px;
+    fill: #D6CBC1;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 8.89%;
+    left: 86.40%;
+}
+
+
+
+
+ 
