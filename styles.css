@@ -26,6 +26,12 @@ body {
     justify-content: center;
 }
 
+#one .nav-btn{
+    visibility: hidden;
+}
+
+
+
 #two{
     height: 100%;
     width: 1.875%;
@@ -112,12 +118,42 @@ body {
 
 }
 
+.scroll-res{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.scroll-res *{
+    margin: 0;
+}
+
+.scroll-res h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1rem;
+}
+
+.scroll-res svg{
+    fill: #FFC700;
+}
+
+
+
 #landing-body h2{
     color: #D6CBC1;
     font-family: Alef;
     font-weight: lighter;
     font-size: 1.25rem;
     margin-top: 15px;
+    text-align: center;
+
 }
 
 #landing-body h1{
@@ -148,14 +184,14 @@ body {
     transform: rotate(270deg);
     color: #D6CBC1;
     font-family: Alef;
-    font-size: 8rem;
+    font-size: 15vh;
     font-weight: lighter;
    
 
 }
 
 .sidebar svg{
-    margin-top: 20px;
+    margin-top: 1.2%;
     fill: #D6CBC1;
 }
 
@@ -183,6 +219,7 @@ body {
     font-weight: lighter;
     font-size: 1.25rem;
     margin-top: 15px;
+    text-align: center;
 }
 
 #about-body h3{
@@ -191,7 +228,9 @@ body {
     font-family: Alef;
     font-weight: lighter;
     font-size: 1.15rem;
-    margin-top: 3.61%
+    margin-top: 3.61%;
+    text-align: left;
+
 }
 
 #about-body h1{
@@ -200,8 +239,70 @@ body {
     color: #FFC700;
     margin-top: 6.203%;
     font-weight: lighter;
+    text-align: center;
 }
 
 
 
- 
+
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 800px){
+	#two{
+        display: none;
+    }
+
+    #three{
+        display: none;
+    }
+
+    #four{
+        display: none;
+    }
+
+    #five{
+        display: none;
+    }
+
+    #one{
+        width: 100%;
+    }
+    #landing-body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #one .nav-btn{
+        visibility: visible;
+    }
+
+    .scroll-res{
+        visibility: visible;
+    }
+
+    #about-body{
+        justify-content: center;
+        align-items: center;
+    }
+    #about-body h3{
+        text-align: center;
+    }
+
+    .branding{
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px){
+#one *{
+    padding-right: 10px;
+}
+
+}
+
+@media only screen and (max-height: 425px){
+    
+    
+    }
