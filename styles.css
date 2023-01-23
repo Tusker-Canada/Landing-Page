@@ -58,6 +58,35 @@ body {
 
 }
 
+.branding{
+    position: absolute;
+    top: 6%;
+    left: 13.95%;
+    height: 14%;
+
+}
+
+.branding *{
+    margin:0;
+}
+
+.branding h1{
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+.branding h2{
+    font-size: 1.25rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+
+}
+
+
+
 #landing-body{
     display: flex;
     flex-direction: column;
@@ -70,11 +99,11 @@ body {
     margin-bottom: 0;
 }
 
-#landing-body .yellow{
+.yellow{
     color: #FFC700;
 }
 
-#landing-body .line{
+.line{
 
     border:none;
     width: 402px;
@@ -136,6 +165,42 @@ body {
     left: 86.40%;
 }
 
+#about-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+#about-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#about-body h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+#about-body h3{
+    width: 39.4%;
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.15rem;
+    margin-top: 3.61%
+}
+
+#about-body h1{
+    font-family: Alef;
+    font-size: 1.6rem;
+    color: #FFC700;
+    margin-top: 6.203%;
+    font-weight: lighter;
+}
 
 
 
