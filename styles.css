@@ -628,6 +628,11 @@ font-weight: lighter;
 .contact-body h2 a{
     color:#D6CBC1;
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+.contact-body h2 a:hover{
+    color:#FFC700;
 }
 
 .contact-body h3{
