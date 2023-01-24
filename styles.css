@@ -12,13 +12,22 @@ body {
     height:100vh;
     overflow-x: hidden;
     background-color: #2f3233;
-    display:flex;
-    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.scroll-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-cont,.area{
+    height: 600px
 }
 
 
-#one{
-    height: 100%;
+
+.one{
+    height: 100vh;
     width: 69.792%;
     background-color: #344966;
     display: flex;
@@ -26,32 +35,32 @@ body {
     justify-content: center;
 }
 
-#one .nav-btn{
+.one .nav-btn{
     visibility: hidden;
 }
 
 
 
-#two{
-    height: 100%;
+.two{
+    height: 100vh;
     width: 1.875%;
     background-color: #D6CBC1;
 }
 
-#three{
-    height: 100%;
+.three{
+    height: 100vh;
     width: 1.875%;
     background-color: #344966;
 }
 
-#four{
-    height: 100%;
+.four{
+    height: 100vh;
     width: 1.875%;
     background-color: #D6CBC1;
 }
 
-#five{
-    height: 100%;
+.five{
+    height: 100vh;
     width: 24.583%;
     background-color: #344966;
 }
@@ -64,9 +73,17 @@ body {
 
 }
 
+.logo1{
+    position: absolute;
+    top: 103.98%;
+    left: 4.01%;
+    height: 14%;
+
+}
+
 .branding{
     position: absolute;
-    top: 6%;
+    top: 106%;
     left: 13.95%;
     height: 14%;
 
@@ -93,14 +110,14 @@ body {
 
 
 
-#landing-body{
+.landing-body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left:8.06% ;
 }
 
-#landing-body *{
+.landing-body *{
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -144,9 +161,33 @@ body {
     fill: #FFC700;
 }
 
+.scroll-res1{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: -97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
-#landing-body h2{
+}
+
+.scroll-res1 *{
+    margin: 0;
+}
+
+.scroll-res1 h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1rem;
+}
+
+.scroll-res1 svg{
+    fill: #FFC700;
+}
+
+.landing-body h2{
     color: #D6CBC1;
     font-family: Alef;
     font-weight: lighter;
@@ -156,13 +197,13 @@ body {
 
 }
 
-#landing-body h1{
+.landing-body h1{
     font-family: Alef;
     font-size: 8rem;
     color: #D6CBC1;
 }
 
-#landing-body h3{
+.landing-body h3{
     color: #D6CBC1;
     font-family: Alef;
     font-weight: lighter;
@@ -176,7 +217,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 30%;
+ 
+   
   
 }
 
@@ -186,6 +228,7 @@ body {
     font-family: Alef;
     font-size: 15vh;
     font-weight: lighter;
+    margin-top: 54%;
    
 
 }
@@ -201,19 +244,25 @@ body {
     left: 86.40%;
 }
 
-#about-body{
+.nav-btn1{
+    position: absolute;
+    top: 108.89%;
+    left: 86.40%;
+}
+
+.about-body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left:8.06% ;
 }
 
-#about-body *{
+.about-body *{
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#about-body h2{
+.about-body h2{
     color: #D6CBC1;
     font-family: Alef;
     font-weight: lighter;
@@ -222,7 +271,7 @@ body {
     text-align: center;
 }
 
-#about-body h3{
+.about-body h3{
     width: 39.4%;
     color: #D6CBC1;
     font-family: Alef;
@@ -233,7 +282,7 @@ body {
 
 }
 
-#about-body h1{
+.about-body h1{
     font-family: Alef;
     font-size: 1.6rem;
     color: #FFC700;
@@ -246,48 +295,59 @@ body {
 
 
 
+
 @media only screen and (max-width: 1200px){
 
 }
 
 @media only screen and (max-width: 800px){
-	#two{
+	.two{
         display: none;
     }
 
-    #three{
+    .three{
         display: none;
     }
 
-    #four{
+    .four{
         display: none;
     }
 
-    #five{
+    .five{
         display: none;
     }
 
-    #one{
+    .one{
         width: 100%;
     }
-    #landing-body{
+    .landing-body{
         justify-content: center;
         align-items: center;
     }
 
-    #one .nav-btn{
+    .one .nav-btn{
         visibility: visible;
     }
+
+    
+    .one .nav-btn1{
+        visibility: visible;
+    }
+
 
     .scroll-res{
         visibility: visible;
     }
 
-    #about-body{
+    .scroll-res1{
+        visibility: visible;
+    }
+
+    .about-body{
         justify-content: center;
         align-items: center;
     }
-    #about-body h3{
+    .about-body h3{
         text-align: center;
     }
 
@@ -296,7 +356,7 @@ body {
     }
 }
 @media only screen and (max-width: 425px){
-#one *{
+.one *{
     padding-right: 10px;
 }
 
