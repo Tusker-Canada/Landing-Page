@@ -15,6 +15,9 @@ body {
     overflow-y: auto;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 
 
@@ -259,6 +262,35 @@ body {
     margin-top: 1.2%;
     fill: #D6CBC1;
 }
+
+.sidebar1{
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ 
+   
+  
+}
+
+.sidebar1 h1{
+    transform: rotate(270deg);
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 15vh;
+    font-weight: lighter;
+    margin-top: 54%;
+   
+
+}
+
+.sidebar1 svg{
+    margin-top: 1.2%;
+    fill: #D6CBC1;
+}
+
 
 
 
@@ -644,6 +676,7 @@ font-weight: lighter;
     margin-bottom: 5%;
 
 }
+
 
 
 
