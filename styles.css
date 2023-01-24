@@ -519,6 +519,8 @@ font-weight: lighter;
 
 
 
+
+
 .productive-body{
     display: flex;
     flex-direction: column;
@@ -563,6 +565,79 @@ font-weight: lighter;
 .productive .one{
     background-image: url(./Productive.png);
     background-position: bottom;
+}
+
+
+/*Page 6*/
+.logo5{
+    position: absolute;
+    top: 503.98%;
+    left: 4.01%;
+    height: 14%;
+
+}
+
+.branding4{
+position: absolute;
+top: 506%;
+left: 13.95%;
+height: 14%;
+
+}
+
+.branding4 *{
+margin:0;
+}
+
+.branding4 h1{
+font-size: 2.2rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+}
+
+.branding4 h2{
+font-size: 1.25rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+
+}
+
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+.contact-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-body h2{
+    color: #D6CBC1;
+    font-size: 2rem;
+    font-family: Alef;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+.contact-body h2 a{
+    color:#D6CBC1;
+    text-decoration: none;
+}
+
+.contact-body h3{
+    margin-top: 3%;
+    font-family: Alef;
+    color: #D6CBC1;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+
 }
 
 
@@ -685,6 +760,26 @@ font-weight: lighter;
     .branding3{
         display: none;
     }
+
+
+    .contact-body{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-body h2{
+        font-size: 1.5rem;
+    }
+
+    .contact-body h3{
+        font-size: 1.25rem;
+    }
+
+    .branding4{
+        display: none;
+    }
+
 }
 @media only screen and (max-width: 425px){
 .one *{
