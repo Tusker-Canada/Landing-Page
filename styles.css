@@ -15,14 +15,7 @@ body {
     overflow-y: auto;
 }
 
-.scroll-cont{
-    display: flex;
-    flex-direction: column;
-}
 
-.scroll-cont,.area{
-    height: 600px
-}
 
 
 
@@ -165,7 +158,7 @@ body {
     visibility: hidden;
     position: absolute;
     left: 50%;
-    bottom: -97%;
+    bottom: 190%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,6 +177,32 @@ body {
 }
 
 .scroll-res1 svg{
+    fill: #FFC700;
+}
+
+.scroll-res2{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 190%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.scroll-res2 *{
+    margin: 0;
+}
+
+.scroll-res2 h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1rem;
+}
+
+.scroll-res2 svg{
     fill: #FFC700;
 }
 
@@ -210,6 +229,9 @@ body {
     font-size: 1.25rem;
     margin-top: 0;
 }
+
+
+/*SideBar*/
 
 .sidebar{
     display: flex;
@@ -238,6 +260,8 @@ body {
     fill: #D6CBC1;
 }
 
+/* Nav Button*/
+
 .nav-btn{
     position: absolute;
     top: 8.89%;
@@ -249,6 +273,15 @@ body {
     top: 108.89%;
     left: 86.40%;
 }
+
+.nav-btn2{
+    position: absolute;
+    top: 208.89%;
+    left: 86.40%;
+}
+
+
+/* About Body */
 
 .about-body{
     display: flex;
@@ -293,7 +326,99 @@ body {
 
 
 
+/*Page 3*/
 
+
+.lecoin .one{
+    background-image: url(./Lecoin.png);
+    background-position: center;
+}
+
+.logo2{
+        position: absolute;
+        top: 203.98%;
+        left: 4.01%;
+        height: 14%;
+    
+}
+
+.branding1{
+    position: absolute;
+    top: 206%;
+    left: 13.95%;
+    height: 14%;
+
+}
+
+.branding1 *{
+    margin:0;
+}
+
+.branding1 h1{
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+.branding1 h2{
+    font-size: 1.25rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+
+}
+
+.lecoin-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+.lecoin-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lecoin-body h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90%;
+}
+
+.lecoin-body h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.lecoin-body h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.lecoin-body h2{
+    width: 80%;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+/*Media Queries */
 
 
 @media only screen and (max-width: 1200px){
@@ -334,12 +459,19 @@ body {
         visibility: visible;
     }
 
+    .one .nav-btn2{
+        visibility: visible;
+    }
 
     .scroll-res{
         visibility: visible;
     }
 
     .scroll-res1{
+        visibility: visible;
+    }
+
+    .scroll-res2{
         visibility: visible;
     }
 
@@ -351,7 +483,25 @@ body {
         text-align: center;
     }
 
+    .lecoin-body{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lecoin-body h2{
+        font-size: 1.5rem;
+    }
+
+    .lecoin-body h3{
+        font-size: 1.25rem;
+    }
+
     .branding{
+        display: none;
+    }
+
+    .branding1{
         display: none;
     }
 }
