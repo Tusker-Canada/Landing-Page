@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Alef";
-    src: url("/Fonts/Alef/Alef-Regular.ttf")
+    src: url("./Fonts/Alef/Alef-Regular.ttf")
   }
 
 
@@ -393,9 +393,177 @@ body {
 
 
 
+/*Page 4 */
+.logo3{
+    position: absolute;
+    top: 303.98%;
+    left: 4.01%;
+    height: 14%;
+
+}
+
+.branding2{
+position: absolute;
+top: 306%;
+left: 13.95%;
+height: 14%;
+
+}
+
+.branding2 *{
+margin:0;
+}
+
+.branding2 h1{
+font-size: 2.2rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+}
+
+.branding2 h2{
+font-size: 1.25rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+
+}
 
 
 
+
+.leveler-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+.leveler-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.leveler-body h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90%;
+}
+
+.leveler-body h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.leveler-body h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.leveler-body h2{
+    width: 80%;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+.leveler .one{
+    background-image: url(./Leveler.png);
+    background-position: bottom;
+}
+
+
+
+/*Page 5 */
+.logo4{
+    position: absolute;
+    top: 403.98%;
+    left: 4.01%;
+    height: 14%;
+
+}
+
+.branding3{
+position: absolute;
+top: 406%;
+left: 13.95%;
+height: 14%;
+
+}
+
+.branding3 *{
+margin:0;
+}
+
+.branding3 h1{
+font-size: 2.2rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+}
+
+.branding3 h2{
+font-size: 1.25rem;
+font-family: Alef;
+color: #D6CBC1;
+font-weight: lighter;
+
+}
+
+
+
+
+.productive-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:8.06% ;
+}
+
+.productive-body *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productive-body h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90%;
+}
+
+.productive-body h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.productive-body h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.productive-body h2{
+    width: 80%;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+.productive .one{
+    background-image: url(./Productive.png);
+    background-position: bottom;
+}
 
 
 
@@ -431,18 +599,6 @@ body {
         align-items: center;
     }
 
-    .one .nav-btn{
-        visibility: visible;
-    }
-
-    
-    .one .nav-btn1{
-        visibility: visible;
-    }
-
-    .one .nav-btn2{
-        visibility: visible;
-    }
 
     .scroll-res{
         visibility: visible;
@@ -464,6 +620,9 @@ body {
         text-align: center;
     }
 
+
+
+
     .lecoin-body{
 
         justify-content: center;
@@ -483,6 +642,47 @@ body {
     }
 
     .branding1{
+        display: none;
+    }
+
+
+
+    .leveler-body{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leveler-body h2{
+        font-size: 1.5rem;
+    }
+
+    .leveler-body h3{
+        font-size: 1.25rem;
+    }
+
+    .branding2{
+        display: none;
+    }
+
+
+
+
+    .productive-body{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productive-body h2{
+        font-size: 1.5rem;
+    }
+
+    .productive-body h3{
+        font-size: 1.25rem;
+    }
+
+    .branding3{
         display: none;
     }
 }
