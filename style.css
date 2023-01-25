@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "Alef";
+    src: url("./Fonts/Alef/Alef-Regular.ttf")
+  }
+
+
+/* Formats the Body */
+* {
+    margin: 0;
+    padding:0;
+  }
+
+  /*Global*/
+  .yellow{
+    color: #FFC700;
+  }
+
+  .long-line{
+
+    border:none;
+    width: 21vh;
+    height: 6px;
+    background-color: #FFC700;
+
+}
+
+.short-line{
+
+    border:none;
+    width: 12vh;
+    height: 6px;
+    background-color: #FFC700;
+
+}
+  
+  /* Wrapper houses everything (is usefull when doing parallax) */
+  .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  
+  /* Name of the section, initializes flexbox */
+
+
+  .section{
+    height: 100vh;
+    display: flex;
+  }
+
+  .lecoin{
+
+    background-image: url(./Lecoin.png);
+    background-position: -10vh;
+  }
+
+  .home {
+    background-color: #344966;
+  }
+
+  .about{
+    background-color: #344966;
+  }
+
+  .leveler{
+    background-image: url(./Leveler.png);
+    background-position: left;
+    background-repeat: no-repeat;
+
+    
+  }
+
+  
+  /* This is the main area (this will encompass everything from branding to subtext) */
+  .main-area {
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; /* You can change this to center, left, or right to choose where the text is */
+    align-items: left;
+    position: relative;
+    margin-left: 4vw; /* This is the margin. This allows for the text to be controlled left and right */
+  }
+
+  
+
+  /*Main text of a Page*/
+
+  
+  /* Contains the entire side area (sidebar and lines) */
+  .side-area {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  aside {
+    height: 100vh;
+    width: 30vw;
+    background-color: #344966;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* This is the big div that holds the three lines */
+  .lines {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+  /* Line1 */
+  .line-1{
+    height: 100vh;
+    width: 2vw;
+    background-color: #D6CBC1;
+  }
+  
+  /* Line2 */
+  .line-2 {
+      height: 100vh;
+      width: 2vw;
+      background-color: #344966;
+    }
+  
+  /* Line3 */
+  .line-3 {
+    height: 100vh;
+    width: 2vw;
+    background-color: #D6CBC1;
+  }
+
+  .side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  /* Text within the sidebar */
+  .side-bar h1 {
+    transform: rotate(270deg);
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 15vh;
+    font-weight: lighter;
+  }
+  
+  /* Arrow within the sidebar */
+  .side-bar svg{
+    fill: #FFC700;
+    margin-top: 15vh;
+  }
+
+  /*Branding*/
+  .branding{
+    display: flex;
+    align-items: center;
+    margin-top: 4vh;
+  }
+
+  .branding img{
+    height: 14vh;
+  }
+
+  .branding .branding-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    font-family: Alef;
+    color: #D6CBC1;
+  }
+
+  .branding .branding-text *{
+    margin:0;
+    padding: 0;
+    font-weight: lighter;
+
+  }
+
+  .main-text{
+    margin-top: 20vh;
+  }
+
+  /*Page 1*/
+
+  .home .main-text h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 15px;
+  }
+
+  .home .main-text h1{
+    font-family: Alef;
+    font-size: 8rem;
+    color: #D6CBC1;
+  }
+
+  .home .main-text h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  /*Page 2*/
+
+  .about .main-text h2{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-top: 15px;
+  }
+
+  .about .main-text h3{
+    width: 39.4vw;
+    color: #D6CBC1;
+    font-family: Alef;
+    font-weight: lighter;
+    font-size: 1.15rem;
+    margin-top: 3.61vh;
+    text-align: left;
+  }
+
+  .about .main-text h1{
+    font-family: Alef;
+    font-size: 1.6rem;
+    color: #FFC700;
+    margin-top: 6.203vh;
+    font-weight: lighter;
+  }
+
+  /*Page 3*/
+  .lecoin .main-text h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90%;
+}
+
+.lecoin .main-text h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.lecoin.main-text h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.lecoin .main-text h2{
+    width: 80%;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+  
+}
+
+/*Page 4*/
+
+.leveler .main-text h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90vh;
+}
+
+.leveler .main-text h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5vh;
+    font-weight: lighter;
+}
+
+.leveler .main-text h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.leveler .main-text h2{
+    width: 60vw;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+  
