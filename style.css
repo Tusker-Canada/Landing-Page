@@ -331,6 +331,7 @@ aside {
   color: #D6CBC1;
   width: 50vw;
   font-size: 1.5rem;
+  font-weight: normal;
   margin-bottom: 5vh;
 
 }
@@ -368,6 +369,9 @@ aside {
 
   }
 
+  .home .main-text h1 {
+    font-size: 6rem;
+  }
 }
 
 
@@ -438,4 +442,16 @@ aside {
 
   }
 
+  .about .main-text h3 {
+    width: 75vw;
+  }
+
+  .contact .main-text h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .home .main-text h1 {
+    font-size: 4rem;
+  }
 }
