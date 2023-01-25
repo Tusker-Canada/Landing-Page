@@ -8,9 +8,13 @@
 
 /*Global*/
 
-  .yellow {
-    color: #FFC700;
-  }
+/* Accent Colour */
+
+.yellow {
+  color: #FFC700;
+}
+
+/* Lines used */
 
 .long-line {
   border: none;
@@ -25,6 +29,7 @@
   width: 12vh;
   height: 6px;
   background-color: #FFC700;
+  margin-bottom: 5vh;
 
 }
 
@@ -34,7 +39,7 @@
   padding: 0;
 }
 
-
+/* */
 
 
 
@@ -49,14 +54,14 @@
 }
 
 /* Name of the section, initializes flexbox */
-
-
 .section {
   height: 100vh;
   display: flex;
   scroll-snap-align: center;
 
 }
+
+/* Individual page backgrounds */
 
 .home {
   background-color: #344966;
@@ -106,7 +111,6 @@
 
 
 
-/*Main text of a Page*/
 
 
 /* Contains the entire side area (sidebar and lines) */
@@ -153,6 +157,8 @@ aside {
   background-color: #D6CBC1;
 }
 
+/* Container for hodling just the side bar (no lines) */
+
 .side-bar {
   display: flex;
   flex-direction: column;
@@ -176,16 +182,20 @@ aside {
 }
 
 /*Branding*/
+
+/* Name */
 .branding {
   display: flex;
   align-items: center;
   margin-top: 4vh;
 }
 
+/* Logo */
 .branding img {
   height: 14vh;
 }
 
+/* Tagline */
 .branding .branding-text {
   display: flex;
   flex-direction: column;
@@ -201,12 +211,12 @@ aside {
 
 }
 
+/* Formatting main taxt */
 .main-text {
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 /*Page 1*/
-
 .home .main-text h2 {
   color: #D6CBC1;
   font-family: Alef;
@@ -230,7 +240,6 @@ aside {
 }
 
 /*Page 2*/
-
 .about .main-text h2 {
   color: #D6CBC1;
   font-family: Alef;
@@ -257,22 +266,20 @@ aside {
   font-weight: lighter;
 }
 
-/*Page 3*/
-
-
-/*Page 5*/
+/* Project Pages */
 .section .main-text h1 {
   font-family: Alef;
   color: #FFC700;
-  font-size: 3.3rem;
+  font-size: 2rem;
   font-weight: lighter;
-  margin-bottom: 3.90vh;
+  margin-bottom: 5vh;
 }
 
 .section .main-text h3 {
   color: #D6CBC1;
   font-family: Alef;
   font-size: 1.4rem;
+  width: 50vw;
   margin-bottom: 5vw;
   font-weight: lighter;
 }
@@ -291,10 +298,10 @@ aside {
   font-weight: lighter;
 }
 
-/* Page 6 */
+/* Contact Page */
 .contact .main-text h2 {
   color: #D6CBC1;
-  font-size: 2rem;
+  font-size: 3vh;
   font-family: Alef;
   text-decoration: none;
   font-weight: lighter;
@@ -312,59 +319,116 @@ aside {
 }
 
 .contact .main-text h3 {
-  margin-top: 3%;
+  margin-top: 3vh;
   font-family: Alef;
   color: #D6CBC1;
-  width: 60%;
+  width: 50vw;
   font-size: 1.5rem;
-  margin-bottom: 5%;
+  margin-bottom: 5vh;
+
+}
+
+/*Media Queries*/
+
+/* Media query for medium size screens (decreases side area size) */
+@media only screen and (max-width: 750px) {
+
+  aside {
+    height: 100vh;
+    width: 20vw;
+    background-color: #344966;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-bar h1 {
+    transform: rotate(270deg);
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 10vh;
+    font-weight: lighter;
+  }
+
+  /* Decreases font size of the contact links */
+  .contact .main-text h2 {
+    color: #D6CBC1;
+    font-size: 2vh;
+    font-family: Alef;
+    text-decoration: none;
+    font-weight: lighter;
+
+  }
 
 }
 
 
-/*Media Queries*/
+/* Media query for small mobile screens */
+@media only screen and (max-width: 500px) {
 
-@media only screen and (max-width: 700px) {
+  /* Gets rid of side area entirely */
   .side-area {
     display: none;
   }
 
-  .main-area {
-    height: 100vh;
+  /* Reduces main-text margin to make sure the "one line of code at a time" part stays on that page */
+  .main-text {
+    margin-top: 10vh;
+  }
+
+  /* Chaning font sizes */
+  .sction .main-text h3 {
     width: 100vw;
+    font-size: 2rem;
+  }
+
+  .section .main-text h1 {
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 5vh;
+  }
+
+  .section .main-text h3 {
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1rem;
+    width: 75vw;
+    margin-bottom: 5vw;
+    font-weight: lighter;
+  }
+
+  .section .main-text h3 span {
+    font-family: Alef;
+    font-size: 1rem;
+  }
+
+  .section .main-text h2 {
+    width: 75vw;
+    font-size: 1rem;
+    margin-bottom: 5vh;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+  }
+
+  /* Changing logo and logo font sizes */
+  .branding .branding-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    margin-left: 2vh;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-size: small;
   }
 
-  .main-text {
-    margin-top: 2vh;
+  .branding .branding-text * {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+
   }
 
-  /*Branding*/
-.branding {
-  display: flex;
-  align-items: center;
-  margin-top: 4vh;
-}
-
-.branding img {
-  height: 7vh;
-}
-
-.branding .branding-text {
-  display: flex;
-  flex-direction: column;
-  font-family: Alef;
-  color: #D6CBC1;
-}
-
-.branding .branding-text * {
-  margin: 0;
-  padding: 0;
-  font-weight: lighter;
-
-}
 }
