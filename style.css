@@ -4,13 +4,23 @@
   }
 
 
-/* Formats the Body */
-* {
-    margin: 0;
-    padding:0;
+/*
+
+/*Global*/
+
+
+
+
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+  
+  html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
   }
 
-  /*Global*/
   .yellow{
     color: #FFC700;
   }
@@ -23,6 +33,14 @@
     background-color: #FFC700;
 
 }
+
+/* Formats the Body */
+* {
+    margin: 0;
+    padding:0;
+  }
+
+
 
 .short-line{
 
@@ -39,6 +57,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-snap-type: y mandatory; /*Temporary Scroll Snap */
   }
   
   /* Name of the section, initializes flexbox */
@@ -47,12 +66,14 @@
   .section{
     height: 100vh;
     display: flex;
+    scroll-snap-align: center; 
+
   }
 
   .lecoin{
 
     background-image: url(./Lecoin.png);
-    background-position: -10vh;
+    background-position: -1vh;
   }
 
   .home {
@@ -65,10 +86,17 @@
 
   .leveler{
     background-image: url(./Leveler.png);
-    background-position: left;
-    background-repeat: no-repeat;
+    background-position: -1vh;    
+  }
 
-    
+  .contact{
+    background-color: #344966;
+  }
+
+  .productivex{
+    background-image: url(./Productive.png);
+    background-position: -1vh;
+
   }
 
   
@@ -291,11 +319,74 @@
 }
 
 .leveler .main-text h2{
-    width: 60vw;
+    width: 50vw;
     font-size: 2.2rem;
     font-family: Alef;
     color: #D6CBC1;
     font-weight: lighter;
 }
+
+/*Page 5*/
+.productivex .main-text h1{
+    font-family: Alef;
+    color: #FFC700;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    margin-bottom: 3.90%;
+}
+
+.productivex .main-text h3{
+    color: #D6CBC1;
+    font-family: Alef;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.productivex .main-text h3 span{
+    font-family: Alef;
+    font-size: 1.5rem;
+}
+
+.productivex .main-text h2{
+    width: 80%;
+    font-size: 2.2rem;
+    font-family: Alef;
+    color: #D6CBC1;
+    font-weight: lighter;
+}
+
+/* Page 6 */
+.contact .main-text h2{
+    color: #D6CBC1;
+    font-size: 2rem;
+    font-family: Alef;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+.contact .main-text h2 a{
+    color:#D6CBC1;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.contact .main-text h2 a:hover{
+    color:#FFC700;
+}
+
+.contact .main-text h3{
+    margin-top: 3%;
+    font-family: Alef;
+    color: #D6CBC1;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+
+}
+
+
+/*Media Queries*/
 
   
