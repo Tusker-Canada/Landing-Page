@@ -33,6 +33,10 @@
 
 }
 
+.fade{
+    opacity: 0;
+}
+
 /* Formats the Body */
 * {
   margin: 0;
@@ -61,14 +65,16 @@
 
 }
 
+
+
 /* Individual page backgrounds */
 
 .home {
-  background-color: #344966;
+    background-image: linear-gradient( to right, #243d5f, #344966);
 }
 
 .about {
-  background-color: #344966;
+    background-image: linear-gradient( to right, #243d5f, #344966);
 }
 
 .lecoin {
@@ -89,7 +95,7 @@
 }
 
 .contact {
-  background-color: #344966;
+    background-image: linear-gradient( to right, #243d5f, #344966);
 }
 
 
@@ -122,7 +128,7 @@
 aside {
   height: 100vh;
   width: 30vw;
-  background-color: #344966;
+  background-image: linear-gradient( to right, #243d5f, #344966);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -163,8 +169,24 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translatey(0px);
+  animation: float 1s ease-in-out infinite;
+  overflow: hidden;  
 }
 
+/* Floating Animation for the side bar*/
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-7vh);
+	}
+	100% {
+		transform: translatey(0px);
+        
+	}
+}
 
 /* Text within the sidebar */
 .side-bar h1 {
@@ -173,6 +195,7 @@ aside {
   font-family: Alef;
   font-size: 15vh;
   font-weight: lighter;
+
 }
 
 /* Arrow within the sidebar */
@@ -267,7 +290,7 @@ aside {
 }
 
 /* Project Pages */
-.section .main-text h1 {
+.project .main-text h1 {
   font-family: Alef;
   color: #FFC700;
   font-size: 2rem;
@@ -275,7 +298,7 @@ aside {
   margin-bottom: 5vh;
 }
 
-.section .main-text h3 {
+.project .main-text h3 {
   color: #D6CBC1;
   font-family: Alef;
   font-size: 1.4rem;
@@ -284,12 +307,12 @@ aside {
   font-weight: lighter;
 }
 
-.section .main-text h3 span {
+.project .main-text h3 span {
   font-family: Alef;
   font-size: 1.5rem;
 }
 
-.section .main-text h2 {
+.project .main-text h2 {
   width: 50vw;
   font-size: 1.5rem;
   margin-bottom: 5vh;
@@ -378,12 +401,12 @@ aside {
   }
 
   /* Chaning font sizes */
-  .sction .main-text h3 {
+  .project .main-text h3 {
     width: 100vw;
     font-size: 2rem;
   }
 
-  .section .main-text h1 {
+  .project .main-text h1 {
     font-family: Alef;
     color: #FFC700;
     font-size: 1.5rem;
@@ -391,7 +414,7 @@ aside {
     margin-bottom: 5vh;
   }
 
-  .section .main-text h3 {
+  .project .main-text h3 {
     color: #D6CBC1;
     font-family: Alef;
     font-size: 1rem;
@@ -400,12 +423,12 @@ aside {
     font-weight: lighter;
   }
 
-  .section .main-text h3 span {
+  .project .main-text h3 span {
     font-family: Alef;
     font-size: 1rem;
   }
 
-  .section .main-text h2 {
+  .project .main-text h2 {
     width: 75vw;
     font-size: 1rem;
     margin-bottom: 5vh;
