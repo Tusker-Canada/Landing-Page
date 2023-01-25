@@ -72,7 +72,7 @@
 
   .lecoin{
 
-    background-image: url(./Lecoin.png);
+    background-image: url(./assets/Lecoin.png);
     background-position: -1vh;
   }
 
@@ -85,7 +85,7 @@
   }
 
   .leveler{
-    background-image: url(./Leveler.png);
+    background-image: url(./assets/Leveler.png);
     background-position: -1vh;    
   }
 
@@ -94,7 +94,7 @@
   }
 
   .productivex{
-    background-image: url(./Productive.png);
+    background-image: url(./assets/Productive.png);
     background-position: -1vh;
 
   }
