@@ -70,11 +70,11 @@
 /* Individual page backgrounds */
 
 .home {
-    background-image: linear-gradient( to right, #243d5f, #344966);
+  background-color: #344966;
 }
 
 .about {
-    background-image: linear-gradient( to right, #243d5f, #344966);
+  background-color: #344966;
 }
 
 .lecoin {
@@ -95,7 +95,7 @@
 }
 
 .contact {
-    background-image: linear-gradient( to right, #243d5f, #344966);
+  background-color: #344966;
 }
 
 
@@ -128,7 +128,7 @@
 aside {
   height: 100vh;
   width: 30vw;
-  background-image: linear-gradient( to right, #243d5f, #344966);
+  background-color: #344966;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,24 +169,9 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translatey(0px);
-  animation: float 1s ease-in-out infinite;
-  overflow: hidden;  
+  
 }
 
-/* Floating Animation for the side bar*/
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-7vh);
-	}
-	100% {
-		transform: translatey(0px);
-        
-	}
-}
 
 /* Text within the sidebar */
 .side-bar h1 {
@@ -195,7 +180,6 @@ aside {
   font-family: Alef;
   font-size: 15vh;
   font-weight: lighter;
-
 }
 
 /* Arrow within the sidebar */
